@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 
 
 export default function Main() {
   return (
-    <div >
+    <div >  
      <Link href="login"><h1>login/signup</h1></Link>
     </div>
   )
