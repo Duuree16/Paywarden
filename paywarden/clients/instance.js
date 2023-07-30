@@ -1,0 +1,12 @@
+import axios from "axios";
+
+export const getAuthorizationHeader = () =>
+  `${window.localStorage.token ? window.localStorage.token : ""}`;
+export const instance = axios.create({
+//   baseURL: "https://soddent-api.vercel.app/",
+  baseURL: "http://localhost:1234/",
+  // timeout: 5000,
+  headers: {
+    authorization: getAuthorizationHeader(),
+  },
+});
