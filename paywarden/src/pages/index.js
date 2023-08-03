@@ -1,10 +1,9 @@
-import styles from "../designs/mainPage.module.css"
+import Link from "next/link";
+// import styles from "../designs/mainPage.module.css"
 
 export default function Home() {
   
   return (
-    <div className={styles.base}>
-      Erdemee GG EZ fk u
-    </div>
+      <Link href="/Register">GO</Link>
   );
 }
