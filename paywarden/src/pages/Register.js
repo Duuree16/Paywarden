@@ -1,13 +1,22 @@
 import Link from 'next/link'
 import styles from '../designs/login.module.css'
 import { useState } from 'react'
+import axios from "axios"
 
 export default function Register() {
   const [name, setName] = useState('')
   const [pass, setPass] = useState('')
   const [vis,setVis] = useState(false)
   const Login = () => {
-    console.log(name,pass)
+    console.log('jjj')
+    axios
+    .post("http://localhost:1234/login", {name:name,password:pass})
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((err) => {
+      console.log("got err")
+    });
   }
   return (
     <div className={styles.base}>
