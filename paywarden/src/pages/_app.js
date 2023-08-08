@@ -1,4 +1,4 @@
-
+import "../app/global.css"
 import {  UserProvider } from "@/common/userContext";
 
 function MyApp({ Component, pageProps }) {
