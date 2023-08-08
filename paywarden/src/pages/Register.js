@@ -12,7 +12,8 @@ export default function Register() {
     axios
     .post("http://localhost:1234/login", {name:name,password:pass})
     .then((res) => {
-      console.log(res)
+      console.log(res.data)
+      localStorage.setItem("auth token",res.data)
     })
     .catch((err) => {
       console.log("got err")
