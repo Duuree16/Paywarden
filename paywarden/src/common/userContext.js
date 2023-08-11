@@ -1,9 +1,7 @@
 import axios from 'axios'
 import { createContext, useEffect } from 'react'
 export const UserContext = createContext({})
-//My name is danny
-//im doing useless stuff just for my git repo
-//jk
+
 export const UserProvider = ({ children }) => {
   const userVerification = () => {
     const token = localStorage.getItem('auth token')
