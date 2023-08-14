@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { createContext, useEffect } from 'react'
 export const UserContext = createContext({})
-
+//hey barbie suc  my dic
 export const UserProvider = ({ children }) => {
   const userVerification = () => {
     const token = localStorage.getItem('auth token')
